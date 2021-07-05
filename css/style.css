@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    overflow-x:hidden;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    --main-color:#283256;
+    --primary-color:#888888;
+    --button-background: #4b709e;
+    --primary-button-background:#f37649 ;
+    --background-color: #e2efff;
+}
+
+h1,h2{
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--main-color);
+    text-transform: capitalize;
+}
+h3,h4{
+    font-family: "muli";
+    color:var(--main-color);
+}
+
+h3{
+    font-weight: 750;
+    font-style: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+
+}
+p,a,li,button{
+    font-family: 'Roboto', sans-serif;
+    color:var(--primary-color);
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;;
+    text-decoration: none;
+    cursor:pointer;
+    font-size: 1.8rem;    
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    padding: 1rem 3rem ;
+    border-radius:2rem;
+    border: none;
+    outline:none;
+    line-height:3.6rem;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-style: 20rem;
+    text-transform: capitalize;
+ }
+ 
+
+ /* OUR MENU STYLE  */
+
+ header{
+     padding:0 15rem;
+
+ }
+ header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    height: 12rem;
+    position:relative;
+    z-index:9;
+ }
+ header nav .left-side-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width:50%;
+    background-color: #fff;
+    position:relative;
+    z-index:9;
+ }
+ header nav .left-side-menu a img {
+     width:13rem;
+     height:5.5rem;
+ }
+ header nav .left-side-menu .sub-menu{
+     height: inherit;
+     display: flex;
+ }
+ header nav .left-side-menu .sub-menu a {
+     margin-right: 4rem;
+ }
+ header nav .left-side-menu .sub-menu a li{
+     font-size: 2rem;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    transition: all 0.2s;   
+}
+
+header nav .left-side-menu .sub-menu a  li:hover{
+    color:var(--button-background)
+}
+
+/* Rioght Side Menu  */
+header .right-side-menu{
+    width:50%;
+    display: flex;
+    justify-content: end;
+}
+
+header .right-side-menu .sub-menu{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end ;
+}
+header .right-side-menu .sub-menu a {
+    margin-right: 8rem;
+    padding:0.7rem 2rem;
+    background:rgba(255,255,255,0.5);
+    font-size:2rem;
+    cursor:pointer; 
+    border-radius: 1rem;
+}
+
+header .right-side-menu .sub-menu button{
+    color:#fff;
+    padding:0.5rem 2.5rem;
+    background-color:var(--button-background);
+}
+
+header .right-side-menu .sub-menu button:hover{
+    background: #134786;
+}
+
+header .right-side-menu .sub-menu a li:hover{
+    color:var(--button-background)
+}
+
+
+/* Our hero css style  */
+
+.main-hero-section{
+    padding: 0 20rem;
+    height:100%;
+    width:100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-right:0;
+    margin-bottom:10rem;
+}
+
+.main-hero-section h1{
+    width:55rem;
+    margin-top: 6rem;
+    font-size: 7.5rem;
+    line-height: 9rem;
+    margin-bottom: 5rem;
+}
+
+.main-hero-section p{
+    margin-bottom: 8rem;
+    width:43rem;   
+}
+
+.main-hero-section .button-group{
+    display: flex;
+    align-items:center;
+    width:300px;
+}
+.main-hero-section .button-group img{
+    width:16rem;
+}
+
+.main-hero-section .button-group .gpstoreimg{
+    margin-left:2.3rem;
+    margin-bottom:0.7rem;
+}
+.main-hero-section .hero-right-side{
+    width:50%;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+/* OUR HERO RIGHT SIDE    */
+.main-hero-section .hero-right-side{
+    width:50%;
+    height:100vh;
+    background: var(--background-color);
+    position:absolute;
+    right:0;
+    top:0;
+    background: rgba(226,239,255,0.3);
+    border-radius: 90px 20px 0px 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-hero-section .hero-right-side img{
+    width:100rem;
+    height:90rem;
+    margin-right: 41rem;
+}
+
+/* OUR 2ND SECTION   */
+
+.common-section{
+
+    width:100%;
+    height:70rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 9rem;
+    padding: 20rem 20rem;
+    margin-bottom: 30rem;
+}
+.common-section .left-side{
+    width:inherit;
+    height:inherit;
+}
+.common-section .left-side img{
+    width:45rem;
+    height:60rem;
+    margin-left: 10rem;
+    border-radius: 2rem;
+    margin-top: 2.5rem;
+}
+.common-section .left-side figure{
+    width: 20rem;
+    height:65rem;
+    background: #f3f9ff;
+    border-radius: 20rem;
+
+}
+
+/* our 2nd Section right side  */
+.common-section .right-side{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+}
+.common-section .right-side h2{
+    width: 40rem;
+    font-style: normal;
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    line-height: 6.3rem;
+    text-transform: capitalize;
+}
+.common-section .right-side p {
+    width:40.3rem;
+    height:9rem;
+    text-transform: lowercase;
+    margin-bottom: 3rem;
+}
+.common-section .right-side .common-button{
+    padding:1rem 3rem;
+    background-color: var(--primary-button-background);
+    margin-right: 2rem;
+    color:#fff;
+}
+.common-section .right-side button:last-child{
+    color:var(--main-color);
+    background-color: transparent;
+}
+.common-section .right-side .common-button:hover{
+    background: #cc491d;
+}
+
+.common-section .right-side .common-button-normal:hover{
+    background: var(--primary-button-background);
+    color:#fff;
+}
+
+
+/* <=====================3rd Section====================>  */
+.section-third{
+    width:100%;
+    height:70rem;
+    background-color: var(--background-color);
+    padding:3rem 20rem;
+}
+.section-third h2{
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    margin-top:3rem;
+    text-align: center;
+}
+.section-third p{
+    height:9rem;
+    
+    text-align: center;
+}
+.section-third .section-third-task{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 3rem;
+    grid-column-gap: 4rem;
+
+}
+
+.section-third .section-third-task .task-1,
+.section-third .section-third-task .task-2,
+.section-third .section-third-task .task-3{
+    padding:2rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+.section-third .section-third-task .task-1 h3,
+.section-third .section-third-task .task-2 h3,
+.section-third .section-third-task .task-3 h3{
+    font-size:2.5rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+
+.section-third .section-third-task .task-1 img,
+.section-third .section-third-task .task-2 img,
+.section-third .section-third-task .task-3 img{
+    margin-top: 2rem;
+    width:15rem;
+    height: 15rem;
+    transition:all 0.3s;
+}
+
+.section-third .section-third-task .task-1 img,
+.section-third .section-third-task .task-2 img{
+    height: 16rem;
+}
+
+.section-third .section-third-task .task-1:hover,
+.section-third .section-third-task .task-2:hover,
+.section-third .section-third-task .task-3:hover{
+    background:#fff;
+    box-shadow: 0rem 0.4rem 2rem rgba(35,52,53,0.3);
+}
+.section-third .section-third-task .task-1:hover > img,
+.section-third .section-third-task .task-2:hover > img ,
+.section-third .section-third-task .task-3:hover > img{
+    transform:rotate(360deg)
+}
+#section-four img{
+    width: inherit;
+    height: inherit;
+}
+ /* <====================Section 5 Starts Here ==============>  */
+#section-five .left-side img{
+    margin: 0;
+}
+#section-five p{
+    margin-bottom: 0;
+}
+#section-five h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+#section-five .right-side h2{
+    width:55rem;
+    font-weight: 600;
+}
+
+#section-five .right-side{
+    justify-content: flex-start;
+    padding-top: 5rem;
+}
+#section-five .fitness-goals{
+    margin: 0;
+    padding: 0;
+}
+
+#section-five .right-side h3{
+text-transform: none;
+}
+
+#section-five .right-side p{
+    height: 3rem;
+}
+#section-five .right-side div{
+    margin-bottom: 5rem;
+}
+
+.fa-heart{
+    color:#cc491d;
+}
+
+/* <=====================Our 5th Section Starts Here====================>  */
+
+footer{
+    width: 100%;
+    background: var(--background-color);
+    height:auto;
+    display:grid;
+    padding:5rem 20rem;
+    grid-template-columns: auto auto;
+
+}
+
+footer img{
+    width: 13rem;
+    height: 5.5rem;
+}
+footer .footer-menu{
+     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+footer div h4{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+footer div a {
+    font-size: 1.7rem;
+    line-height: 150%;
+}
+
+footer .footer-div-t a{
+    font-size: 1.5rem;
+}
+
+/* OUr 7th section  */
+.icon-bar{
+    position: fixed;
+    top:50;
+    transform: translateY(-50%);
+    z-index:11;
+}
+
+icon-bar a{
+z-index: 10;
+}
+
+
+
+/* <===================RESPONSIVE LAYOUT START HERE =============================> */
+
+@media(max-width:770px){
+    header, main-hero-sectionm.common-setion{
+        padding:0 5rem;
+    }
+    header nav {
+        padding-top: 1rem;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    header nav .left-side-menu{
+        width:100%;
+        display: block;
+        order:2;
+    }
+    header nav .left-side-menu img{
+        display: block;
+        width: 100%;
+    }
+    /* Hero section css style  */
+    .main-hero-section{
+        width:100%;
+        height:80vh;
+        display: flex;
+        flex-flow: column;
+    }
+.main-hero-section .hero-left-side{
+    order:2;
+    width:100;
+}
+.main-hero-section .hero-right-side{
+    order:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    background: transparent; 
+}
